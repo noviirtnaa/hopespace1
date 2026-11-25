@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HOPE SPACE | Temukan Harapanmu, Rancang Masa Depanmu</title>
+  <meta name="description" content="HOPE SPACE adalah ruang digital bagi siswa SMA untuk mengenali tujuan, menemukan cara mencapainya, dan membangun motivasi menuju masa depan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="top">
+    <div class="container navbar__inner">
+      <a href="#top" class="logo" aria-label="HOPE SPACE beranda">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="16" fill="#E6DDF8"/>
+          <path d="M16 24V15" stroke="#6F5AB0" stroke-width="2" stroke-linecap="round"/>
+          <path d="M16 16c0-4 2.5-6.5 7-6.5 0 4-2.6 6.5-7 6.5Z" fill="#8E78C9"/>
+          <path d="M16 18.5c0-3-2-5-5.5-5 0 3 2 5 5.5 5Z" fill="#B7A5E3"/>
+        </svg>
+        <span>HOPE <b>SPACE</b></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a href="#top">Beranda</a>
+        <a href="#hope-theory">Hope Theory</a>
+        <a href="#modul">Modul</a>
+        <a href="#mulai">Mulai</a>
+        <a href="pretest.html" class="btn btn--small">Mulai Perjalananmu</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <span class="eyebrow">Ruang Pengembangan Harapan untuk Siswa SMA</span>
+          <h1>Temukan Harapanmu, <em>Rancang Masa Depanmu.</em></h1>
+          <p class="lead">Setiap masa depan dimulai dari sebuah harapan. HOPE SPACE adalah ruang untuk mengenali potensi diri, menemukan tujuan, dan membangun langkah menuju masa depan yang kamu inginkan.</p>
+          <div class="hero__actions">
+            <a href="pretest.html" class="btn">Mulai Perjalananmu</a>
+            <a href="#hope-theory" class="btn btn--ghost">Kenali Hope Theory</a>
+          </div>
+          <ul class="hero__facts">
+            <li><strong>4</strong> modul</li>
+            <li><strong>2</strong> minggu</li>
+            <li><strong>3</strong> komponen harapan</li>
+          </ul>
+        </div>
+
+        <div class="hero__art reveal" aria-hidden="true">
+          <svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#EEE7FB"/>
+                <stop offset="1" stop-color="#FBF3E4"/>
+              </linearGradient>
+              <linearGradient id="hillA" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#CDBFEF"/>
+                <stop offset="1" stop-color="#B7A5E3"/>
+              </linearGradient>
+            </defs>
+            <!-- backdrop -->
+            <rect x="20" y="20" width="480" height="440" rx="48" fill="url(#sky)"/>
+            <circle cx="370" cy="130" r="70" fill="#F7E9C9" opacity=".9"/>
+            <circle cx="370" cy="130" r="46" fill="#F3D99D"/>
+            <!-- clouds -->
+            <g fill="#fff" opacity=".85">
+              <ellipse cx="130" cy="110" rx="46" ry="14"/>
+              <ellipse cx="156" cy="100" rx="28" ry="14"/>
+              <ellipse cx="420" cy="230" rx="38" ry="11"/>
+            </g>
+            <!-- hills -->
+            <path d="M20 360c70-60 150-70 230-30s170 30 250-20v150a48 48 0 0 1-48 48H68a48 48 0 0 1-48-48Z" fill="url(#hillA)"/>
+            <path d="M20 410c90-40 170-30 260 0s150 20 220-10v60a48 48 0 0 1-48 48H68a48 48 0 0 1-48-48Z" fill="#8E78C9"/>
+            <!-- winding path -->
+            <path d="M120 440c60-30 130-20 150-60s-60-60-20-100 110-40 120-90" fill="none" stroke="#FBF6EC" stroke-width="14" stroke-linecap="round" opacity=".9"/>
+            <path d="M120 440c60-30 130-20 150-60s-60-60-20-100 110-40 120-90" fill="none" stroke="#8E78C9" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 12"/>
+            <!-- goal star -->
+            <g transform="translate(370 190)">
+              <path d="M0-26 7-8l19 2-15 12 5 19-16-10-16 10 5-19-15-12 19-2Z" fill="#6F5AB0"/>
+            </g>
+            <!-- sprout -->
+            <g transform="translate(132 392)">
+              <path d="M0 40V4" stroke="#FBF6EC" stroke-width="4" stroke-linecap="round"/>
+              <path d="M0 6c0-18 12-30 32-30 0 18-12 30-32 30Z" fill="#FBF6EC"/>
+              <path d="M0 16C0 3-9-6-24-6c0 13 9 22 24 22Z" fill="#E6DDF8"/>
+            </g>
+            <!-- floating dots -->
+            <circle cx="90" cy="220" r="7" fill="#B7A5E3"/>
+            <circle cx="446" cy="330" r="9" fill="#F3D99D"/>
+            <circle cx="250" cy="90" r="5" fill="#8E78C9" opacity=".6"/>
+            <circle cx="60" cy="300" r="4" fill="#fff"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOPE THEORY ============ -->
+    <section class="section" id="hope-theory">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Landasan Teori</span>
+          <h2>Tiga komponen yang membentuk harapan</h2>
+          <p>Berdasarkan Hope Theory dari C. R. Snyder, harapan bukan sekadar berangan-angan. Harapan adalah gabungan antara tujuan, cara, dan dorongan untuk terus melangkah.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2.5" fill="currentColor"/></svg>
+            </div>
+            <h3>Goals</h3>
+            <span class="tag">Tujuan</span>
+            <p>Hal yang ingin kamu capai. Tujuan memberi arah dan makna pada setiap langkah yang kamu ambil.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="36" r="4"/><circle cx="36" cy="12" r="4"/><path d="M16 36h10a6 6 0 0 0 0-12h-4a6 6 0 0 1 0-12h10"/></svg>
+            </div>
+            <h3>Pathways</h3>
+            <span class="tag">Jalur</span>
+            <p>Kemampuan menemukan berbagai cara untuk mencapai tujuan, termasuk mencari alternatif saat menemui hambatan.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M26 6 12 26h10l-2 16 16-22H26Z"/></svg>
+            </div>
+            <h3>Agency</h3>
+            <span class="tag">Dorongan</span>
+            <p>Keyakinan dan motivasi untuk memulai serta mempertahankan usaha, bahkan ketika perjalanan terasa sulit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MODUL ============ -->
+    <section class="section section--tint" id="modul">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Perjalanan 4 Sesi</span>
+          <h2>Apa yang akan kamu temukan di sini?</h2>
+          <p>Empat modul yang saling terhubung, dirancang bertahap selama dua minggu dengan bahasa dan contoh yang dekat dengan kehidupan siswa SMA.</p>
+        </div>
+
+        <ol class="modules">
+          <li class="module reveal">
+            <span class="module__num">01</span>
+            <div>
+              <h3>Discover Your Hope</h3>
+              <p>Kenali harapan dan tujuan yang bermakna bagi dirimu.</p>
+              <span class="meta">Minggu 1 · 60 menit</span>
+            </div>
+          </li>
+          <li class="module reveal">
+            <span class="module__num">02</span>
+            <div>
+              <h3>Set Your Goals and Find Your Pathways</h3>
+              <p>Susun tujuan dan temukan berbagai cara untuk mencapainya.</p>
+              <span class="meta">Minggu 1 · 60 menit</span>
+            </div>
+          </li>
+          <li class="module reveal">
+            <span class="module__num">03</span>
+            <div>
+              <h3>Build Your Agency</h3>
+              <p>Kenali kekuatan diri dan bangun motivasi untuk terus berusaha.</p>
+              <span class="meta">Minggu 2 · 30 menit</span>
+            </div>
+          </li>
+          <li class="module reveal">
+            <span class="module__num">04</span>
+            <div>
+              <h3>My Hope Journey</h3>
+              <p>Rancang langkah nyata dan lihat perkembangan perjalananmu.</p>
+              <span class="meta">Minggu 2 · 30 menit</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section" id="mulai">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__text">
+            <h2>Siap memulai perjalananmu?</h2>
+            <p>Kamu tidak harus mengetahui semua jawaban sekarang. Mulailah dengan mengenali dirimu, menentukan satu tujuan, dan mengambil langkah kecil untuk masa depanmu.</p>
+            <a href="pretest.html" class="btn btn--light">Mulai Perjalananmu</a>
+            <small class="cta__note">Mulailah dengan Pretest Harapan, 12 pernyataan singkat sebagai asesmen awal.</small>
+          </div>
+          <svg class="cta__art" viewBox="0 0 200 200" aria-hidden="true">
+            <circle cx="100" cy="100" r="90" fill="#fff" opacity=".12"/>
+            <circle cx="100" cy="100" r="60" fill="#fff" opacity=".14"/>
+            <path d="M100 150V95" stroke="#FBF6EC" stroke-width="5" stroke-linecap="round"/>
+            <path d="M100 100c0-26 16-42 44-42 0 26-16 42-44 42Z" fill="#FBF6EC"/>
+            <path d="M100 118c0-18-12-30-34-30 0 18 12 30 34 30Z" fill="#E6DDF8"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="logo logo--footer"><span>HOPE <b>SPACE</b></span></a>
+        <p>Your future starts with hope.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Navigasi footer">
+        <a href="#top">Beranda</a>
+        <a href="#hope-theory">Hope Theory</a>
+        <a href="#modul">Modul</a>
+        <a href="#mulai">Mulai</a>
+      </nav>
+      <p class="footer__disclaimer">HOPE SPACE adalah media promotif untuk refleksi dan pengembangan diri, bukan alat diagnosis atau pengganti layanan psikologi profesional.</p>
+    </div>
+    <div class="footer__bar">
+      <div class="container">
+        <span>© 2026 HOPE SPACE · Kelompok 3, Mata Kuliah Tele Asesmen dan Tele Intervensi</span>
+        <span>Fakultas Psikologi, Universitas Muhammadiyah Malang</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

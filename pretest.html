@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pretest Harapan | HOPE SPACE</title>
+  <meta name="description" content="Pretest Harapan HOPE SPACE: 12 pernyataan untuk membantumu merefleksikan tujuan, cara, dan dorongan menuju masa depan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="top">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo" aria-label="HOPE SPACE beranda">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="16" fill="#E6DDF8"/>
+          <path d="M16 24V15" stroke="#6F5AB0" stroke-width="2" stroke-linecap="round"/>
+          <path d="M16 16c0-4 2.5-6.5 7-6.5 0 4-2.6 6.5-7 6.5Z" fill="#8E78C9"/>
+          <path d="M16 18.5c0-3-2-5-5.5-5 0 3 2 5 5.5 5Z" fill="#B7A5E3"/>
+        </svg>
+        <span>HOPE <b>SPACE</b></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="index.html#hope-theory">Hope Theory</a>
+        <a href="index.html#modul">Modul</a>
+        <a href="pretest.html" class="is-active" aria-current="page">Pretest</a>
+        <a href="index.html#mulai" class="btn btn--small">Mulai Perjalananmu</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ JUDUL HALAMAN ============ -->
+    <section class="page-head">
+      <div class="container page-head__inner">
+        <span class="eyebrow">Hope Test · Pretest</span>
+        <h1>Pretest Harapan: <em>Mari mengenali dirimu.</em></h1>
+        <p class="lead">Sebelum memulai perjalanan di HOPE SPACE, luangkan waktu sejenak untuk melihat bagaimana kamu memandang tujuan dan masa depanmu saat ini.</p>
+      </div>
+    </section>
+
+    <section class="pretest">
+      <div class="pretest__wrap">
+
+        <!-- ============ INSTRUKSI ============ -->
+        <div class="instruction">
+          <h2>Petunjuk Pengisian</h2>
+          <ul>
+            <li>Terdapat <strong>12 pernyataan</strong> tentang tujuan, cara mencapai tujuan, dan dorongan untuk berusaha.</li>
+            <li>Baca setiap pernyataan, lalu pilih jawaban yang paling sesuai dengan keadaanmu <strong>saat ini</strong>.</li>
+            <li>Pilihan jawaban: <strong>1</strong> = Pasti Salah, <strong>2</strong> = Sebagian Besar Salah, <strong>3</strong> = Sebagian Besar Benar, <strong>4</strong> = Pasti Benar.</li>
+            <li>Tidak ada jawaban benar atau salah. Jawablah dengan jujur dan seluruh pernyataan wajib diisi.</li>
+          </ul>
+          <p class="instruction__note">Hasil pretest digunakan sebagai bahan refleksi diri, bukan sebagai diagnosis atau penilaian klinis.</p>
+        </div>
+
+        <!-- ============ PROGRES ============ -->
+        <div class="progress" role="status" aria-live="polite">
+          <span class="progress__text" id="progressText">0 dari 12 terjawab</span>
+          <div class="progress__bar" id="progressBar" role="progressbar" aria-label="Progres pengisian" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0">
+            <span class="progress__fill" id="progressFill"></span>
+          </div>
+        </div>
+
+        <!-- ============ FORM ============ -->
+        <form id="pretestForm" novalidate>
+          <div id="questions" style="display:flex;flex-direction:column;gap:40px">
+            <noscript><p>Halaman ini memerlukan JavaScript untuk menampilkan pernyataan.</p></noscript>
+          </div>
+
+          <div class="submit" style="margin-top:40px">
+            <button type="submit" class="btn" id="submitBtn" disabled>Kirim Jawaban</button>
+            <p class="submit__hint" id="submitHint" aria-live="polite">Masih ada 12 pernyataan yang belum dijawab.</p>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--footer"><span>HOPE <b>SPACE</b></span></a>
+        <p>Your future starts with hope.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Navigasi footer">
+        <a href="index.html">Beranda</a>
+        <a href="index.html#hope-theory">Hope Theory</a>
+        <a href="index.html#modul">Modul</a>
+        <a href="pretest.html">Pretest</a>
+      </nav>
+      <p class="footer__disclaimer">HOPE SPACE adalah media promotif untuk refleksi dan pengembangan diri, bukan alat diagnosis atau pengganti layanan psikologi profesional.</p>
+    </div>
+    <div class="footer__bar">
+      <div class="container">
+        <span>© 2026 HOPE SPACE · Kelompok 3, Mata Kuliah Tele Asesmen dan Tele Intervensi</span>
+        <span>Fakultas Psikologi, Universitas Muhammadiyah Malang</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="pretest.js"></script>
+</body>
+</html>
